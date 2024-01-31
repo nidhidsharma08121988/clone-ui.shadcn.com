@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:css": "tailwindcss -i ./app/globals.css -o ./app/tailwindStyles.css --watch"
   },
   "dependencies": {
     "react": "^18",
