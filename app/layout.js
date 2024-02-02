@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/Header'
+import Header from '@/components/Header';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,9 +23,15 @@ export default function RootLayout({
           href='newIcon.svg'
         />
       </head>
-      <body className={inter.className}>
-        <Header/>
-        <main>{children}</main>
+      <body
+        className={`min-h-screen bg-background font-sans antialiased __className_343187 __framer-cursor`}
+      >
+        <div className='relative flex min-h-screen flex-col bg-background'>
+          <Header />
+          <main className='flex-1'>
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
