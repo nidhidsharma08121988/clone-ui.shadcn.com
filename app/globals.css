@@ -56,6 +56,10 @@ body {
   );
 }
 
+.bg-muted {
+  background-color: hsl(var(--muted));
+}
+
 .bg-primary {
   background-color: hsl(var(--primary));
 }
