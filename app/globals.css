@@ -50,6 +50,33 @@ body {
   );
 }
 
+.bg-background {
+  background-color: hsl(
+    var(--background)
+  );
+}
+
+.bg-primary {
+  background-color: hsl(var(--primary));
+}
+.text-primary-foreground {
+  color: hsl(var(--primary-foreground));
+}
+
+.hover\:bg-accent:hover {
+  background-color: hsl(var(--accent));
+}
+
+.hover\:text-accent-foreground:hover {
+  color: hsl(var(--accent-foreground));
+}
+
+.hover\:bg-primary\/90:hover {
+  background-color: hsl(
+    var(--primary) / 0.9
+  );
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
