@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
 
 const Header = () => {
   return (
     <header className='sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
       <div className='container flex h-14 max-w-screen-2xl items-center'>
         <div className='mr-4 hidden md:flex'>
-          <a
+          <Link
             className='mr-6 flex items-center space-x-2'
             href='/'
           >
@@ -46,38 +47,38 @@ const Header = () => {
             <span className='hidden font-bold sm:inline-block'>
               shadcn/ui
             </span>
-          </a>
+          </Link>
           <nav className='flex items-center gap-6 text-sm'>
-            <a
+            <Link
               className='transition-colors hover:text-foreground/80 text-foreground/60'
               href='/docs'
             >
               Docs
-            </a>
-            <a
+            </Link>
+            <Link
               className='transition-colors hover:text-foreground/80 text-foreground/60'
               href='/docs/components'
             >
               Components
-            </a>
-            <a
+            </Link>
+            <Link
               className='transition-colors hover:text-foreground/80 text-foreground/60'
               href='/themes'
             >
               Themes
-            </a>
-            <a
+            </Link>
+            <Link
               className='transition-colors hover:text-foreground/80 text-foreground'
               href='/examples'
             >
               Examples
-            </a>
-            <a
-              className='hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block'
-              href='https://github.com/shadcn-ui/ui'
+            </Link>
+            <Link
+              className='hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block' target="_blank"
+              href='https://github.com/nidhidsharma08121988'
             >
               GitHub
-            </a>
+            </Link>
           </nav>
         </div>
         <button
@@ -139,7 +140,7 @@ const Header = () => {
             </button>
           </div>
           <nav className='flex items-center'>
-            <a
+            <Link
               target='_blank'
               rel='noreferrer'
               href='https://github.com/shadcn-ui/ui'
@@ -158,8 +159,8 @@ const Header = () => {
                   GitHub
                 </span>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               target='_blank'
               rel='noreferrer'
               href='https://twitter.com/shadcn'
@@ -178,7 +179,7 @@ const Header = () => {
                   Twitter
                 </span>
               </div>
-            </a>
+            </Link>
             <button
               className='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0'
               type='button'
@@ -216,7 +217,8 @@ const Header = () => {
                   fill-rule='evenodd'
                   clip-rule='evenodd'
                 ></path>
-              </svg>``
+              </svg>
+              ``
               <span className='sr-only'>
                 Toggle theme
               </span>
