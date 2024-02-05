@@ -69,12 +69,13 @@ const Header = () => {
             </Link>
             <Link
               className='transition-colors hover:text-foreground/80 text-foreground'
-              href='/examples'
+              href='/examples/mail'
             >
               Examples
             </Link>
             <Link
-              className='hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block' target="_blank"
+              className='hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block'
+              target='_blank'
               href='https://github.com/nidhidsharma08121988'
             >
               GitHub
