@@ -1,11 +1,16 @@
-import React from 'react'
+import SubMenu from '@/components/SubMenu';
+import React from 'react';
+import ExampleContent from '@/components/ExampleContent';
+const ExamplesMenuContents = ({
+  params: { menuItem },
+}) => {
+  return (
+    <>
+      <ExampleContent />
+      <SubMenu />
+      {menuItem}
+    </>
+  );
+};
 
-const MenuContentPage = ({params:{menuItem}} ) => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default MenuContentPage
+export default ExamplesMenuContents;
