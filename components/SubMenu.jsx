@@ -8,15 +8,17 @@ const SubMenu = () => {
     'bg-muted font-medium text-primary';
   const unSelectedClassNames =
     ' text-muted-foreground hover:text-primary';
- const commonClassNames='flex h-7 items-center text-sm justify-center rounded-full px-4 text-center transition-colors';
+  const commonClassNames =
+    'flex h-7 items-center text-sm justify-center rounded-full px-4 text-center transition-colors';
 
   return (
     <div className='min-w-full table'>
       <div className='mb-4 flex items-center'>
         <Link
           className={`${
-            usePathname() === '/examples/mail'
-              ? selectedClassNames 
+            usePathname() ===
+            '/examples/mail'
+              ? selectedClassNames
               : unSelectedClassNames
           }  ${commonClassNames}`}
           href='/examples/mail'
@@ -25,9 +27,10 @@ const SubMenu = () => {
           Mail
         </Link>
         <Link
-         className={`${
-             usePathname() === '/examples/dashboard'
-              ? selectedClassNames 
+          className={`${
+            usePathname() ===
+            '/examples/dashboard'
+              ? selectedClassNames
               : unSelectedClassNames
           }  ${commonClassNames}`}
           href='/examples/dashboard'
@@ -36,9 +39,10 @@ const SubMenu = () => {
           Dashboard
         </Link>
         <Link
-         className={`${
-           usePathname() ==='/examples/cards'
-              ? selectedClassNames 
+          className={`${
+            usePathname() ===
+            '/examples/cards'
+              ? selectedClassNames
               : unSelectedClassNames
           }  ${commonClassNames}`}
           href='/examples/cards'
@@ -47,9 +51,10 @@ const SubMenu = () => {
           Cards
         </Link>
         <Link
-         className={`${
-             usePathname() === '/examples/tasks'
-              ? selectedClassNames 
+          className={`${
+            usePathname() ===
+            '/examples/tasks'
+              ? selectedClassNames
               : unSelectedClassNames
           }  ${commonClassNames}`}
           href='/examples/tasks'
@@ -58,9 +63,10 @@ const SubMenu = () => {
           Tasks
         </Link>
         <Link
-         className={`${
-             usePathname() === '/examples/playground'
-              ? selectedClassNames 
+          className={`${
+            usePathname() ===
+            '/examples/playground'
+              ? selectedClassNames
               : unSelectedClassNames
           }  ${commonClassNames}`}
           href='/examples/playground'
@@ -70,8 +76,9 @@ const SubMenu = () => {
         </Link>
         <Link
           className={`${
-             usePathname() === '/examples/forms'
-              ? selectedClassNames 
+            usePathname() ===
+            '/examples/forms'
+              ? selectedClassNames
               : unSelectedClassNames
           }  ${commonClassNames}`}
           href='/examples/forms'
@@ -80,9 +87,10 @@ const SubMenu = () => {
           Forms
         </Link>
         <Link
-         className={`${
-             usePathname() === '/examples/music'
-              ? selectedClassNames 
+          className={`${
+            usePathname() ===
+            '/examples/music'
+              ? selectedClassNames
               : unSelectedClassNames
           }  ${commonClassNames}`}
           href='/examples/music'
@@ -91,9 +99,10 @@ const SubMenu = () => {
           Music
         </Link>
         <Link
-         className={`${
-            usePathname() === '/examples/authentication'
-              ? selectedClassNames 
+          className={`${
+            usePathname() ===
+            '/examples/authentication'
+              ? selectedClassNames
               : unSelectedClassNames
           }  ${commonClassNames}`}
           href='/examples/authentication'
