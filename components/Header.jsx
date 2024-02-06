@@ -1,8 +1,16 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+  const classes =
+    'transition-colors hover:text-foreground/80';
+  const unSelectedClasses =
+    'text-foreground/60';
+  const selectedClasses =
+    'text-foreground';
   return (
     <header className='sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
       <div className='container flex h-14 max-w-screen-2xl items-center'>
@@ -50,31 +58,50 @@ const Header = () => {
           </Link>
           <nav className='flex items-center gap-6 text-sm'>
             <Link
-              className='transition-colors hover:text-foreground/80 text-foreground/60'
+              className={`${classes} ${
+                usePathname() ===
+                '/docs'
+                  ? selectedClasses
+                  : unSelectedClasses
+              }`}
               href='/docs'
             >
               Docs
             </Link>
             <Link
-              className='transition-colors hover:text-foreground/80 text-foreground/60'
+              className={`${classes} ${
+                usePathname() ===
+                '/docs/components'
+                  ? selectedClasses
+                  : unSelectedClasses
+              }`}
               href='/docs/components'
             >
               Components
             </Link>
             <Link
-              className='transition-colors hover:text-foreground/80 text-foreground/60'
+              className={`${classes} ${
+                usePathname() ===
+                '/themes'
+                  ? selectedClasses
+                  : unSelectedClasses
+              }`}
               href='/themes'
             >
               Themes
             </Link>
             <Link
-              className='transition-colors hover:text-foreground/80 text-foreground'
+              className={`${classes} ${
+                usePathname().includes('/example') 
+                  ? selectedClasses
+                  : unSelectedClasses
+              }`}
               href='/examples/mail'
             >
               Examples
             </Link>
             <Link
-              className='hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block'
+              className={`hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block`}
               target='_blank'
               href='https://github.com/nidhidsharma08121988'
             >
