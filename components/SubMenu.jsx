@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const SubMenu = () => {
-  const selectedClassNames =
+  const selectedClasses =
     'bg-muted font-medium text-primary';
-  const unSelectedClassNames =
+  const unSelectedClasses =
     ' text-muted-foreground hover:text-primary';
-  const commonClassNames =
+  const classes =
     'flex h-7 items-center text-sm justify-center rounded-full px-4 text-center transition-colors';
 
   return (
@@ -18,9 +18,9 @@ const SubMenu = () => {
           className={`${
             usePathname() ===
             '/examples/mail'
-              ? selectedClassNames
-              : unSelectedClassNames
-          }  ${commonClassNames}`}
+              ? selectedClasses
+              : unSelectedClasses
+          }  ${classes}`}
           href='/examples/mail'
           scroll={false}
         >
@@ -30,9 +30,9 @@ const SubMenu = () => {
           className={`${
             usePathname() ===
             '/examples/dashboard'
-              ? selectedClassNames
-              : unSelectedClassNames
-          }  ${commonClassNames}`}
+              ? selectedClasses
+              : unSelectedClasses
+          }  ${classes}`}
           href='/examples/dashboard'
           scroll={false}
         >
@@ -42,9 +42,9 @@ const SubMenu = () => {
           className={`${
             usePathname() ===
             '/examples/cards'
-              ? selectedClassNames
-              : unSelectedClassNames
-          }  ${commonClassNames}`}
+              ? selectedClasses
+              : unSelectedClasses
+          }  ${classes}`}
           href='/examples/cards'
           scroll={false}
         >
@@ -54,9 +54,9 @@ const SubMenu = () => {
           className={`${
             usePathname() ===
             '/examples/tasks'
-              ? selectedClassNames
-              : unSelectedClassNames
-          }  ${commonClassNames}`}
+              ? selectedClasses
+              : unSelectedClasses
+          }  ${classes}`}
           href='/examples/tasks'
           scroll={false}
         >
@@ -66,9 +66,9 @@ const SubMenu = () => {
           className={`${
             usePathname() ===
             '/examples/playground'
-              ? selectedClassNames
-              : unSelectedClassNames
-          }  ${commonClassNames}`}
+              ? selectedClasses
+              : unSelectedClasses
+          }  ${classes}`}
           href='/examples/playground'
           scroll={false}
         >
@@ -78,9 +78,9 @@ const SubMenu = () => {
           className={`${
             usePathname() ===
             '/examples/forms'
-              ? selectedClassNames
-              : unSelectedClassNames
-          }  ${commonClassNames}`}
+              ? selectedClasses
+              : unSelectedClasses
+          }  ${classes}`}
           href='/examples/forms'
           scroll={false}
         >
@@ -90,9 +90,9 @@ const SubMenu = () => {
           className={`${
             usePathname() ===
             '/examples/music'
-              ? selectedClassNames
-              : unSelectedClassNames
-          }  ${commonClassNames}`}
+              ? selectedClasses
+              : unSelectedClasses
+          }  ${classes}`}
           href='/examples/music'
           scroll={false}
         >
@@ -102,9 +102,9 @@ const SubMenu = () => {
           className={`${
             usePathname() ===
             '/examples/authentication'
-              ? selectedClassNames
-              : unSelectedClassNames
-          }  ${commonClassNames}`}
+              ? selectedClasses
+              : unSelectedClasses
+          }  ${classes}`}
           href='/examples/authentication'
           scroll={false}
         >
