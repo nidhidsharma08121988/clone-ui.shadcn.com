@@ -4,7 +4,6 @@
   "prettier.printWidth": 40,
   "prettier.singleAttributePerLine": true,
   "prettier.singleQuote": true,
-  "prettier.requireConfig": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
