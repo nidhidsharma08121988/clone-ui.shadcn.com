@@ -92,7 +92,9 @@ const Header = () => {
             </Link>
             <Link
               className={`${classes} ${
-                usePathname().includes('/example') 
+                usePathname().includes(
+                  '/example'
+                )
                   ? selectedClasses
                   : unSelectedClasses
               }`}
